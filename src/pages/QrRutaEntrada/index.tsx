@@ -44,6 +44,7 @@ function getLocalIpAddress(): Promise<string> {
 const QrIpLocalEntrada = () => {
   const ip = getLocalIpAddress().then(async (ip) => {
     await setData(`http://192.168.0.4:5173/ManejoDeFases?ip=${ip}&port=5000`);
+    await setData(`https://lemon-meadow-072ad9110.3.azurestaticapps.net/ManejoDeFases?ip=${ip}&port=5000`);
     console.log(ip)
   });
   const [data, setData] = useState('');
