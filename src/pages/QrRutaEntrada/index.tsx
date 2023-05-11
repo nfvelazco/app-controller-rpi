@@ -11,7 +11,7 @@ import QRCode from "react-qr-code";
 
 function getLocalIpAddress(): Promise<string> {
   return new Promise((resolve, reject) => {
-    const RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
+    const RTCPeerConnection = window.RTCPeerConnection;
     if (!RTCPeerConnection) {
       reject(new Error('RTCPeerConnection not available'));
       return;
