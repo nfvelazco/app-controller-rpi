@@ -1,0 +1,10 @@
+@import "variables.scss";
+@import "./components/header";
+@import "./components/home";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}

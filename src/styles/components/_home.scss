@@ -1,0 +1,16 @@
+.home{
+    width: 100 vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-size: 3rem;
+    }
+    button{
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+    }
+}
