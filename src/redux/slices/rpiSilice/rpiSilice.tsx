@@ -47,10 +47,10 @@ export const selectUrlApiRpi = (state : any) => {
     return (state.rpiSilice.ip !== null && state.rpiSilice.port !== null)?`${state.rpiSilice.ip}:${state.rpiSilice.port}`:undefined
 }
 export const selectUrlApiRpiGetLineas = (state : any) => {
-    return (state.rpiSilice.ip !== null && state.rpiSilice.port !== null)?`https://${state.rpiSilice.ip}:${state.rpiSilice.port}/api/lineas`:undefined;
+    return (state.rpiSilice.ip !== null && state.rpiSilice.port !== null)?`http://${state.rpiSilice.ip}:${state.rpiSilice.port}/api/lineas`:undefined;
 }
 export const selectUrlApiCambioDeEstado = (state : any) => {
-    return (state.rpiSilice.ip !== null && state.rpiSilice.port !== null)?`https://${state.rpiSilice.ip}:${state.rpiSilice.port}/api/cambio-estado-linea/`:undefined;
+    return (state.rpiSilice.ip !== null && state.rpiSilice.port !== null)?`http://${state.rpiSilice.ip}:${state.rpiSilice.port}/api/cambio-estado-linea/`:undefined;
 }
 
 
